@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find a Donor</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css" rel="stylesheet">
+    <!-- JQuery -->
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"></script>
+    <!-- favicon -->
+    <link rel="shortcut icon" type="image/png" href="favicon.ico" />
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="css/style-min.css">
+    <title>Ak's Organisationn</title>
+</head>
+<style>
+    body {
+        background-image: url(images/find4.jpeg);
+        background-size: 75%;
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    h3 {
+        text-align: center;
+        color: #000000;
+    }
+
+    #search-container {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 35px;
+        padding: 20px;
+        margin: 50px auto;
+        max-width: 500px;
+    }
+    #search{
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    h2{
+        color: red;
+        text-align: center;
+    }
+
+    #search-container h2 {
+        text-align: center;
+        margin-bottom: 15px;
+    }
+
+    form {
+        text-align: center;
+    }
+
+    .input-group {
+        margin-bottom: 20px;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    select {
+        width: 25%;
+        padding: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+    }
+
+    button[type="submit"] {
+        background-color: #4CAF50;
+        color: rgb(0, 0, 0);
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 20px; /* Adjusted margin top */
+    }
+
+    button[type="submit"]:hover {
+        background-color: #3dbe44;
+    }
+</style>
+<body>
+
+    <!--Navbar -->
+    <nav class="mb-1 navbar navbar-expand-lg navbar-dark danger-color">
+        <a class="navbar-brand" href="credit.html">Ak's Donation</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-333"
+            aria-controls="navbarSupportedContent-333" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent-333">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="blooddonationreq.html">Blood Donation Registeration</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Find a Donor </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="idonate.html">idonate</a>
+                </li>
+
+            </ul>
+            <ul class="navbar-nav ml-auto nav-flex-icons">
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link waves-effect waves-light">
+                        <i class="fab fa-google-plus-g"></i>
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink-333" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">
+                        <i class="fas fa-user"></i>
+                    </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-default"
+                        aria-labelledby="navbarDropdownMenuLink-333">
+                        <a class="dropdown-item" href="login.html">Login</a>
+                        <a class="dropdown-item" href="contact.html">Contact</a>
+                        <a class="dropdown-item" href="More.html">More About US</a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <h3> Serch Result </h3>
+<div>
+    <h2>Serach For a Blood Donor </h2>
+    <form>
+
+    <div class="input-css">
+        <label for="BloodGroup">Blood Group : </label>
+        <select id="BloodGroup" name="BloodGroup">
+         <option value="---Select---"> ---Select--- </option>
+         <option value="A+"> A+ </option>
+         <option value="A-"> A- </option>
+         <option value="A1+"> A1+</option>
+         <option value="A1-"> A1- </option>
+         <option value="A1B+"> A1B+ </option>
+         <option value="A1B- "> A1B- </option>
+         <option value="A2+"> A2+ </option>
+         <option value="A2-"> A2- </option>
+         <option value="A2B+"> A2B+ </option>
+         <option value="A2B-"> A2B- </option>
+         <option value="AB+"> AB+ </option>
+         <option value="AB-"> AB-</option>
+         <option value="B+"> B+ </option>
+         <option value="B-"> B- </option>
+         <option value="Bombay Blood Group"> Bombay Blood Group </option>
+         <option value="INRA"> INRA </option>
+         <option value="O+"> O+ </option>
+         <option value="O-"> O- </option>
+        </select><br>
+    </div>
+    <div class="input-css">
+        <label for="Country"> Country:</label>
+    <select id="Country" name="Country">
+    </div>
+    <div class="input-css">
+
+    </div>
+    <div class="input-css">
+
+    </div>
+    <div class="input-css">
+
+    </div>
+   <option value="---Select--- "> ---Select--- </option>
+    <option value="India">  India</option>
+    </select><br>
+   <label for="State">State:</label>
+   <select id="State" name="State">
+       <option value="---Select---">---Select---</option>
+       <option value="Andhra Pradesh">Andhra Pradesh</option>
+       <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+       <option value="Assam">Assam</option>
+       <option value="Bihar">Bihar</option>
+       <option value="Chhattisgarh">Chhattisgarh</option>
+       <option value="Goa">Goa</option>
+       <option value="Gujarat">Gujarat</option>
+       <option value="Haryana">Haryana</option>
+       <option value="Himachal Pradesh">Himachal Pradesh</option>
+       <option value="Jharkhand">Jharkhand</option>
+       <option value="Karnataka">Karnataka</option>
+       <option value="Kerala">Kerala</option>
+       <option value="Madhya Pradesh">Madhya Pradesh</option>
+       <option value="Maharashtra">Maharashtra</option>
+       <option value="Manipur">Manipur</option>
+       <option value="Meghalaya">Meghalaya</option>
+       <option value="Mizoram">Mizoram</option>
+       <option value="Nagaland">Nagaland</option>
+       <option value="Odisha">Odisha</option>
+       <option value="Punjab">Punjab</option>
+       <option value="Rajasthan">Rajasthan</option>
+       <option value="Sikkim">Sikkim</option>
+       <option value="Tamil Nadu">Tamil Nadu</option>
+       <option value="Telangana">Telangana</option>
+       <option value="Tripura">Tripura</option>
+       <option value="Uttar Pradesh">Uttar Pradesh</option>
+       <option value="Uttarakhand">Uttarakhand</option>
+       <option value="West Bengal">West Bengal</option>
+   </select><br>
+
+   <!-- For Tamil Nadu -->
+   <label for="District">District:</label>
+   <select id="District" name="District">
+       <option value="---Select---">---Select---</option>
+       <option value="Chennai">Chennai</option>
+       <option value="Coimbatore">Coimbatore</option>
+       <option value="Madurai">Madurai</option>
+       <option value="Tiruchirappalli">Tiruchirappalli</option>
+       <option value="Salem">Salem</option>
+       <option value="Tirunelveli">Tirunelveli</option>
+       <option value="Vellore">Vellore</option>
+       <option value="Thoothukudi">Thoothukudi</option>
+       <option value="Nagercoil">Nagercoil</option>
+       <option value="Erode">Erode</option>
+       <option value="Dindigul">Dindigul</option>
+       <option value="Thanjavur">Thanjavur</option>
+       <option value="Krishnagiri">Krishnagiri</option>
+       <option value="Namakkal">Namakkal</option>
+       <option value="Kanchipuram">Kanchipuram</option>
+       <option value="Tiruvallur">Tiruvallur</option>
+       <option value="Cuddalore">Cuddalore</option>
+       <option value="Kanyakumari">Kanyakumari</option>
+       <option value="Karur">Karur</option>
+       <option value="Ramanathapuram">Ramanathapuram</option>
+       <option value="Virudhunagar">Virudhunagar</option>
+       <option value="Nagapattinam">Nagapattinam</option>
+       <option value="Perambalur">Perambalur</option>
+       <option value="Ariyalur">Ariyalur</option>
+       <option value="The Nilgiris">The Nilgiris</option>
+   </select><br>
+   <!-- For Erode -->
+   <label for="City">City:</label>
+   <select id="City" name="City">
+       <option value="---Select---">---Select---</option>
+       <option value="Erode City">Erode City</option>
+       <option value="Perundurai">Perundurai</option>
+       <option value="Bhavani">Bhavani</option>
+       <option value="Gobichettipalayam">Gobichettipalayam</option>
+       <option value="Sathyamangalam">Sathyamangalam</option>
+       <option value="Kavindapadi">Kavindapadi</option>
+       <option value="Modakurichi">Modakurichi</option>
+       <option value="Chennimalai">Chennimalai</option>
+   </select><br>
+   <div id="search">
+    <button type="Search">Search </button>
+   </div>
+   </form>
+</body>
+</html>
